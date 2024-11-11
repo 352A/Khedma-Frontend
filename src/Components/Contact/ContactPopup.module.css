@@ -1,0 +1,40 @@
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #4cb050;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.popup:hover {
+  transform: scale(1.1);
+}
+
+.formContainer {
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  background-color: white;
+  border: 1px solid #4cb050;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  width: 300px;
+}
+
+.customInput {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  direction: rtl;
+}

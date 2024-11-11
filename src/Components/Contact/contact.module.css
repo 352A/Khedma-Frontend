@@ -1,0 +1,24 @@
+:root {
+  --main-padding-top: 0px;
+  --main-padding-bottom: 0px;
+}
+
+.sectionGap {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --main-padding-top: 50px;
+    --main-padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --main-padding-top: 30px;
+    --main-padding-bottom: 30px;
+  }
+}
