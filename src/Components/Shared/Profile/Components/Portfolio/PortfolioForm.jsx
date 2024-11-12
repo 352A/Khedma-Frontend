@@ -87,7 +87,7 @@ export default function PortfolioForm({ onClose, card, getPortfolio }) {
       await api.post(addEndpoint, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse();
@@ -109,7 +109,7 @@ export default function PortfolioForm({ onClose, card, getPortfolio }) {
       await api.put(updateEndpoint, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse();

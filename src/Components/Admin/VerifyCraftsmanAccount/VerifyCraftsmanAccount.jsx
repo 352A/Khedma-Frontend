@@ -47,7 +47,7 @@ export default function VerifyCraftsmanAccount() {
     try {
       const { data } = await api.get(craftsmanApplicationEndPoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setApplication(data.craftsmanApplication);
@@ -100,7 +100,7 @@ export default function VerifyCraftsmanAccount() {
         {},
         {
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );

@@ -161,7 +161,7 @@ export default function CreateAdmin() {
     try {
       const res = await api.post(endPoint, values, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse(resetForm);

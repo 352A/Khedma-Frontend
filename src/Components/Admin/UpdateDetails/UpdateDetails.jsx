@@ -85,7 +85,7 @@ export default function UpdateDetails() {
     try {
       const { data } = await api.patch(handleDebtEndpoint, values, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse(resetForm);

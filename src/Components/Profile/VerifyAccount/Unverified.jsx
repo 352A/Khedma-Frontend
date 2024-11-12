@@ -19,7 +19,7 @@ export default function Unverified() {
     try {
       const { data } = await api.get(getApplicationEndPoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setApplication(data.application);

@@ -86,7 +86,7 @@ export default function VerifyAccountPaper({
     try {
       await api.post(uploadEndPoint, formData, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse();
@@ -102,7 +102,7 @@ export default function VerifyAccountPaper({
     try {
       await api.put(updateEndPoint, formData, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse();

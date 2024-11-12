@@ -69,7 +69,7 @@ export default function PortfolioCard({ card, getPortfolio }) {
     try {
       await api.delete(endpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse();

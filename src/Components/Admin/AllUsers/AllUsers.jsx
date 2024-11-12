@@ -134,7 +134,7 @@ export default function AllUsers() {
     try {
       const { data } = await api.patch(suspendUserEndpoint, formattedValues, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse(data);
@@ -160,7 +160,7 @@ export default function AllUsers() {
         {},
         {
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );
@@ -177,7 +177,7 @@ export default function AllUsers() {
     try {
       const { data } = await api.get(allUsersEndpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setUsers(data.allUsers);

@@ -133,7 +133,7 @@ export default function UpdatePassword() {
     try {
       await api.patch(endPoint, values, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse(resetForm);

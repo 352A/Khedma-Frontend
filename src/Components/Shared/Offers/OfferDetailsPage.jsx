@@ -25,7 +25,7 @@ export default function OfferDetailsPage() {
     try {
       const { data } = await api.get(endPoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       if (userData.role === "user") {

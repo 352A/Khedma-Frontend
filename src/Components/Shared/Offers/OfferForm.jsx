@@ -134,7 +134,7 @@ export default function OfferForm({ offerID, offerDetails, getofferDetails }) {
     try {
       const { data } = await api.put(updateEndpoint, values, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse(data);
@@ -155,7 +155,7 @@ export default function OfferForm({ offerID, offerDetails, getofferDetails }) {
         {},
         {
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );
@@ -176,7 +176,7 @@ export default function OfferForm({ offerID, offerDetails, getofferDetails }) {
         {},
         {
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );
@@ -199,7 +199,7 @@ export default function OfferForm({ offerID, offerDetails, getofferDetails }) {
         {},
         {
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );

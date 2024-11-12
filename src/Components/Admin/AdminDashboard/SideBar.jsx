@@ -52,7 +52,7 @@ function SideBar() {
         {},
         {
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );

@@ -50,7 +50,7 @@ export default function AllAdmins() {
     try {
       const { data } = await api.get(AllAdminsEndPoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setUsers(data.allAdmins);

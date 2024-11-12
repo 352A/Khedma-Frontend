@@ -14,7 +14,7 @@ export default function Gallery() {
     try {
       const { data } = await api.get(portfolioEndPoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setPortfolio(data.portfolio);

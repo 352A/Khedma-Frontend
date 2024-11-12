@@ -34,7 +34,7 @@ export default function DropDown() {
         {},
         {
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );

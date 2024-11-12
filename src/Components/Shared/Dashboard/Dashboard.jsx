@@ -52,7 +52,7 @@ export default function Dashboard() {
     try {
       const { data } = await api.get(offersEndpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       console.log(data);
@@ -66,7 +66,7 @@ export default function Dashboard() {
     try {
       const { data } = await api.get(ordersEndpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setAllOrders(data.orders);
@@ -79,7 +79,7 @@ export default function Dashboard() {
     try {
       const { data } = await api.get(reviewsEndpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setAllReviews(data.reviews);

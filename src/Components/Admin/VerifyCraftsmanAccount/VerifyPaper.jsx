@@ -108,7 +108,7 @@ export default function VerifyPaper({
             response: values.message,
           },
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );
@@ -132,7 +132,7 @@ export default function VerifyPaper({
             response: approveMessage,
           },
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );

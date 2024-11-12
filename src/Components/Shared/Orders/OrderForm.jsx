@@ -85,7 +85,7 @@ export default function OrderDetailsForm({
         {},
         {
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );

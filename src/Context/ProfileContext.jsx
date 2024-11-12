@@ -22,7 +22,7 @@ export default function ProfileContextProvider({ children }) {
     try {
       const response = await api.get(endPoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setUserProfileData(response.data.user);

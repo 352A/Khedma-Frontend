@@ -191,7 +191,7 @@ export default function UpdateDetailsForm({ details, getDetails }) {
     try {
       await api.put(endPoint, values, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse();

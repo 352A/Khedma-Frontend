@@ -55,7 +55,7 @@ function Main() {
     try {
       const { data } = await api.get(usersEndpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setUsersStats(data.data);
@@ -68,7 +68,7 @@ function Main() {
     try {
       const { data } = await api.get(craftsmenEndpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setCraftsmenStats(data.data);
@@ -81,7 +81,7 @@ function Main() {
     try {
       const { data } = await api.get(offersEndpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setOffersStats(data);
@@ -94,7 +94,7 @@ function Main() {
     try {
       const { data } = await api.get(earningsEndpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setEarnings(data);

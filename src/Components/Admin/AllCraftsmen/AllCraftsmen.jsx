@@ -156,7 +156,7 @@ export default function AllCraftsmen() {
         formattedValues,
         {
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );
@@ -174,7 +174,7 @@ export default function AllCraftsmen() {
     try {
       const { data } = await api.patch(handleDebtEndpoint, values, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse(data);
@@ -201,7 +201,7 @@ export default function AllCraftsmen() {
     try {
       const { data } = await api.get(ApplicationsEndpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setUsers(data.allCraftsmen);
@@ -218,7 +218,7 @@ export default function AllCraftsmen() {
         {},
         {
           headers: {
-            authorization: `${bearerKey}${token}`,
+            Authorization: `${bearerKey}${token}`,
           },
         },
       );

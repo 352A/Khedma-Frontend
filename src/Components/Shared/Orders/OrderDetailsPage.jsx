@@ -25,7 +25,7 @@ export default function OrderDetailsPage() {
     try {
       const { data } = await api.get(endPoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setOrderDetails(data.order);

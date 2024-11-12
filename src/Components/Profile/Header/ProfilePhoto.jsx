@@ -79,7 +79,7 @@ export default function ProfilePhoto() {
     try {
       await api.patch(endPoint, formData, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse();

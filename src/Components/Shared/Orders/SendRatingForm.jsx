@@ -74,7 +74,7 @@ export default function SendRatingForm({ orderID, onClose }) {
     try {
       await api.post(endpoint, values, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       handleSuccessResponse();

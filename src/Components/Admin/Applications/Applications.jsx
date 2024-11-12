@@ -52,7 +52,7 @@ export default function Applications() {
     try {
       const { data } = await api.get(ApplicationsEndpoint, {
         headers: {
-          authorization: `${bearerKey}${token}`,
+          Authorization: `${bearerKey}${token}`,
         },
       });
       setUsers(data.craftsmenApplications);
