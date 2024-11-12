@@ -55,7 +55,7 @@ export default function Dashboard() {
           authorization: `${bearerKey}${token}`,
         },
       });
-
+      console.log(data);
       setAllOffers(data[offerKey]);
     } catch (err) {
       console.log(err);
