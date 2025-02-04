@@ -19,7 +19,7 @@ To get started with the Khedma frontend, clone the repository and install depend
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/khedma-frontend.git
+git clone https://github.com/352A/khedma-frontend.git
 
 # Navigate to the project folder
 cd khedma-frontend
